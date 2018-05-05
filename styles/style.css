@@ -1,0 +1,84 @@
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet Portrait
+900 - 1200px:   Tablet Landscape
+1200 - 1800px:  normal styles apply
+> 1800px;       Big Desktop
+ *
+ * $breakpoint argment choices
+ * phone
+ * tab-port
+ * tab-land
+ * big-desk
+ *
+ * ORDER: Base + typography > general layout + grid > page layout > components
+ * 1em = 16px
+ */
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+
+body {
+  box-sizing: border-box;
+  background-color: #FFFEE2; }
+  @media (max-width: 56.25em) {
+    body {
+      padding: 0; } }
+
+.heading-primary {
+  font-family: 'Miltonian', cursive;
+  text-transform: uppercase;
+  color: #562C14; }
+  .heading-primary--main {
+    display: block;
+    font-size: 10rem;
+    font-weight: 400;
+    color: inherit; }
+  .heading-primary--sub {
+    display: block;
+    font-family: 'Miltonian Tattoo', cursive;
+    font-size: 3rem;
+    letter-spacing: 1.6rem;
+    border-top: 3px solid #562C14;
+    text-align: right; }
+
+.nav-link {
+  font-size: 2rem;
+  list-style: none; }
+  .nav-link a:link, .nav-link a:visited {
+    text-decoration: none;
+    font-family: 'Miltonian Tattoo', cursive;
+    color: #562C14; }
+
+.header {
+  height: 26rem;
+  background-color: #ADD6D8;
+  border-bottom: 3px solid #562C14;
+  display: flex;
+  justify-content: center; }
+  .header__logo-box {
+    width: 24rem;
+    height: 24rem;
+    display: inline-block; }
+  .header__logo {
+    width: 100%;
+    height: 100%; }
+  .header__text-box {
+    display: inline-block; }
+    .header__text-box--links ul {
+      margin-top: 4rem;
+      display: flex;
+      justify-content: space-between; }

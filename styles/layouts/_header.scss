@@ -1,0 +1,33 @@
+.header {
+  height: 26rem;
+  background-color: $color-blue-light;
+  border-bottom: 3px solid $color-brown-dark;
+
+  display: flex;
+  justify-content: center;
+
+  &__logo-box {
+
+    width: 24rem;
+    height: 24rem;
+    display: inline-block;
+  }
+
+  &__logo {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__text-box {
+    display: inline-block;
+
+    &--links ul {
+      margin-top: 4rem;
+      display: flex;
+      justify-content: space-between;
+
+      li {
+      }
+    } 
+  }
+}

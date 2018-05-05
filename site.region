@@ -7,7 +7,6 @@
     <!--Include sqs scripts, meta tags, and user content from the code injection tab.-->
     {squarespace-headers}
     <link href="https://fonts.googleapis.com/css?family=Miltonian|Miltonian+Tattoo|Noto+Serif" rel="stylesheet">
-    <link rel="stylesheet" href="styles/style.css" type="text/css">
   </head>
 
   <body>
@@ -15,17 +14,28 @@
     <div class="container">
 
       <header class="header">
-        <div class="header__logo-box">
           
-        </div>
-        <h1 class="site-title" data-content-field="site-title">
-          <a href="/">
-            {website.siteTitle}
-          </a>
-        </h1>
+          <div class="header__logo-box">
+            <a href="/"> <img src="assets/logo.png" alt="Comicopia Logo" class="header__logo"/> </a>
+          </div>
+
+          <div class="header__text-box">
+            <h1 class="heading-primary" >
+              <span class="heading-primary--main" data-content-field="site-title">
+                {website.siteTitle}
+              </a>
+              <span class="heading-primary--sub" data-content-field"site-description">
+                <!-- {website.siteDescription} --> 
+                &nbsp;In Kenmore Square <!-- CHANGE ME -->
+              </span> 
+            </h1>
+            <div class="header__text-box--links">
+              <squarespace:navigation navigationId="mainNav" template="navigation" />
+            </div>
+          </div>
+
       </header>
 
-      <squarespace:navigation navigationId="mainNav" template="navigation" />
       <main class="content">
         <section id="page" role="main" data-content-field="main-content">
           {squarespace.main-content}

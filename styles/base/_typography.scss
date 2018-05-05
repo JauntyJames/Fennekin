@@ -1,0 +1,33 @@
+.heading-primary {
+  font-family: 'Miltonian', cursive;
+  text-transform: uppercase;
+  color: $color-brown-dark;
+
+  &--main {
+    display: block;
+    font-size: 10rem;
+    font-weight: 400;
+    color: inherit;
+  }
+
+  &--sub {
+    display: block;
+    font-family: 'Miltonian Tattoo', cursive;
+    font-size: 3rem;
+    letter-spacing: 1.6rem;
+    border-top: 3px solid $color-brown-dark;
+    text-align: right;
+  }
+
+}
+
+.nav-link {
+  font-size: 2rem;
+  list-style: none;
+
+  & a:link, & a:visited {
+    text-decoration: none;
+    font-family: 'Miltonian Tattoo', cursive;
+    color: $color-brown-dark;
+  }
+}

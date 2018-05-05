@@ -1,0 +1,24 @@
+{
+  "name": "comicopia",
+  "version": "1.0.0",
+  "description": "business website for Comicopia comic book store",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "node-sass styles/main.scss styles/style.css -w"
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JauntyJames/Fennekin.git"
+  },
+  "author": "James Perry Hartman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JauntyJames/Fennekin/issues"
+  },
+  "homepage": "https://github.com/JauntyJames/Fennekin#readme",
+  "devDependencies": {
+    "node-sass": "^4.9.0"
+  }
+}

@@ -6,6 +6,8 @@
 
     <!--Include sqs scripts, meta tags, and user content from the code injection tab.-->
     {squarespace-headers}
+    <link href="https://fonts.googleapis.com/css?family=Miltonian|Miltonian+Tattoo|Noto+Serif" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css" type="text/css">
   </head>
 
   <body>
@@ -13,6 +15,9 @@
     <div class="container">
 
       <header class="header">
+        <div class="header__logo-box">
+          
+        </div>
         <h1 class="site-title" data-content-field="site-title">
           <a href="/">
             {website.siteTitle}
